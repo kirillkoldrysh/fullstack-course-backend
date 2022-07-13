@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "backend part of open fullstack course (part 3)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BadKoldrysh/fullstack-course-backend.git"
+  },
+  "author": "BadKoldrysh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BadKoldrysh/fullstack-course-backend/issues"
+  },
+  "homepage": "https://github.com/BadKoldrysh/fullstack-course-backend#readme"
+}
