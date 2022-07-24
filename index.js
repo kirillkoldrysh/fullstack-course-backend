@@ -77,6 +77,24 @@ app.post('/api/notes/', (request, response) => {
   response.json(note);
 });
 
+app.put('/api/notes/:id', (request, response) => {
+  const id = Number(request.params.id);
+  const noteIndex = notes.findIndex(note => note.id === id);
+
+  if (noteIndex < 0) {
+    response.status(400).json({
+      error: 'note doesnt exist'
+    });
+  }
+
+  const body = request.body;
+
+  notes[noteIndex].important = body.important;
+  notes[noteIndex].content = body.content;
+
+  response.json(notes[noteIndex]);
+});
+
 const generateId = () => {
   const maxId = notes.length > 0
     ? Math.max(...notes.map(n => n.id))
