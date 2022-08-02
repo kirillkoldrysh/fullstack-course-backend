@@ -12,3 +12,16 @@ content-type: application/json
 {
   "content": "When love must die"
 }
+
+###
+
+DELETE http://localhost:3001/api/notes/62e8eb8f3563f4538f789fdd
+
+###
+
+PUT http://localhost:3001/api/notes/62e03036c0de02c857d26787
+content-type: application/json
+
+{
+  "important": true
+}
